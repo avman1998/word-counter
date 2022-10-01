@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Count App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgColor: "#1C0D13",
+              textColor: "#F5C029 ",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    style="font-family: 'Montserrat', sans-serif"
+    class="flex flex-col items-center justify-center min-h-[100vh] bg-bgColor"
+  >
+    <div
+      class="main-container text-center flex flex-col gap-[30px] max-w-[100%] px-[30px]"
+    >
+      <h1 class="text-[200%] text-textColor">Word Count App</h1>
+      <textarea
+        id="myText"
+        cols="50"
+        rows="10"
+        class="border-2 border-black rounded-lg text-[120%] font-semibold p-[5px]"
+      ></textarea>
+      <div>
+        <p class="text-[150%] text-textColor">
+          Total Words : <span id="result-word">0</span>
+        </p>
+        <p class="text-[150%] text-textColor">
+          Total Characters : <span id="result-character">0</span>
+        </p>
+      </div>
+      <h1 class="text-[180%] bg-textColor text-bgColor mt-[40px] rounded">
+        Developed By Aman Verma
+      </h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
