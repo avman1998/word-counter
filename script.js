@@ -11,7 +11,7 @@ textareaEle.addEventListener("input", function () {
   // <!!!---!!!>
   const trimmedInputString = inputString.trim();
   const newStringArray = trimmedInputString.split(" ");
-  wordResult.innerHTML = newStringArray.length;
+  // wordResult.innerHTML = newStringArray.length;
   // <!!!---!!!>
 
   // This Code Will Give Me Character Count
@@ -20,7 +20,7 @@ textareaEle.addEventListener("input", function () {
   charResult.innerHTML = joinedString.length;
   // <!!!---!!!>
 
-  if (str == "") {
+  if (inputString == "") {
     newStringArray.length = 0;
     joinedString.length = 0;
   }
