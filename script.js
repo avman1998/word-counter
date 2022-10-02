@@ -8,19 +8,20 @@ textareaEle.addEventListener("input", function () {
   const inputString = textareaEle.value;
 
   // This Code Will Give Me Word Count
+
   // <!!!---!!!>
-  const trimmedInputString = inputString.trim();
+  const trimmedInputString = inputString.replace(/\s+/g, " ").trim();
   const newStringArray = trimmedInputString.split(" ");
-  // wordResult.innerHTML = newStringArray.length;
+  wordResult.innerHTML = newStringArray.length;
   // <!!!---!!!>
 
   // This Code Will Give Me Character Count
   // <!!!---!!!>
   const joinedString = newStringArray.join("");
-  charResult.innerHTML = joinedString.length;
+  charResult.innerHTML = inputString.length;
   // <!!!---!!!>
 
-  if (inputString == "") {
+  if (inputString === "") {
     newStringArray.length = 0;
     joinedString.length = 0;
   }
