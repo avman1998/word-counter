@@ -18,7 +18,7 @@ textareaEle.addEventListener("input", function () {
   // This Code Will Give Me Character Count
   // <!!!---!!!>
   const joinedString = newStringArray.join("");
-  charResult.innerHTML = inputString.length;
+  charResult.innerHTML = joinedString.length;
   // <!!!---!!!>
 
   if (inputString === "") {
